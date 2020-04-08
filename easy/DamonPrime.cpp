@@ -12,13 +12,18 @@ int main() {
 	    cout<<"No"<<endl;
 	    else
 	    {
-	        int x=0;
+	        int x=0;int y=0;
 	    for(int i=2;i<=(n-1)/2;i++)
 	    {
 	        if((n-1)%i==0)
 	            x=1;
 	    }
-	    if(x==0)
+	    for(int i=2;i<=(n+1)/2;i++)
+	    {
+	        if((n+1)%i==0)
+	            y=1;
+	    }
+	    if(x==0&&y==0)
 	    {
 	        cout<<"Yes"<<endl;
 	    }
